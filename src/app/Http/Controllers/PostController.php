@@ -12,4 +12,9 @@ class PostController extends Controller
         $models = Post::orderBy('id', 'desc')->get();
         return view('index', ['models' => $models]);
     }
+    
+    public function store()
+    {
+        return view('store');
+    }
 }
